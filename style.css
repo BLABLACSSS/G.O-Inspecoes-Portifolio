@@ -424,19 +424,25 @@ footer {
 }
 
 
-/* CELULAR */
+/* ==================== CELULAR ==================== */
 
 @media (max-width: 768px) {
 
+    html,
     body {
-        margin: 0;
         width: 100%;
+        max-width: 100%;
+        overflow-x: hidden;
+        margin: 0;
     }
 
     header {
+        width: 100%;
         height: 400px;
-        margin: 0;
+        box-sizing: border-box;
     }
+
+    /* TEXTOS DO CABEÇALHO */
 
     #Header_texth1 {
         font-size: 32px;
@@ -444,98 +450,153 @@ footer {
 
     #Header_texth2,
     #Header_texth3 {
-        font-size: 24px;
+        font-size: 22px;
     }
 
-    /* SOBRE A EMPRESA */
+
+    /* TODAS AS SEÇÕES */
+
+    #section01,
+    #section02,
+    #section03,
+    #section04,
+    #section05,
+    #section06,
+    #section07 {
+        width: calc(100% - 10px);
+        max-width: 100%;
+        box-sizing: border-box;
+        margin-left: 5px;
+        margin-right: 5px;
+        padding: 10px;
+    }
+
+
+    /* SECTION 01 */
 
     #section01 {
+        display: flex;
         flex-direction: column;
-        gap: 15px;
     }
 
     .caixa {
         width: 100%;
+        max-width: 100%;
         box-sizing: border-box;
     }
 
     .caixa img {
         width: 100%;
+        max-width: 100%;
         height: auto;
         box-sizing: border-box;
     }
 
+
+    /* DESTAQUES */
+
     .destaques {
+        display: flex;
         flex-direction: column;
         align-items: center;
     }
 
     .destaques .destaque {
-        width: 80%;
+        width: 90%;
+        max-width: 300px;
+        box-sizing: border-box;
         margin: 8px;
     }
 
-    /* ENSAIOS */
+
+    /* SECTION 02 */
 
     .imagens-ensaios {
+        display: grid;
         grid-template-columns: 1fr;
+        gap: 15px;
+        margin: 10px;
     }
 
     .imagens-ensaios img {
         width: 100%;
+        max-width: 100%;
+        height: auto;
+        box-sizing: border-box;
     }
 
+
+    /* LISTA 02 */
+
     .lista02 {
+        display: flex;
         flex-direction: column;
         padding: 0;
+        margin: 10px;
     }
 
     .lista02 .itemlista02 {
-        width: 90%;
-        margin: 8px;
+        width: 100%;
+        max-width: 300px;
+        margin: 8px auto;
+        box-sizing: border-box;
     }
 
-    /* POR QUE ESCOLHER */
+
+    /* SECTION 03 */
 
     #section03 h1 {
-        width: 90%;
+        width: 100%;
+        max-width: 350px;
         height: 120px;
         box-sizing: border-box;
     }
 
     .lista03 {
+        display: grid;
         grid-template-columns: 1fr;
+        margin: 10px;
     }
 
     .lista03-baixo {
+        display: flex;
         flex-direction: column;
+        margin: 10px;
     }
 
-    /* NOSSO PROCESSO */
+
+    /* SECTION 04 */
+
+    #section04 h1 {
+        width: 100%;
+        max-width: 350px;
+        height: 150px;
+        box-sizing: border-box;
+    }
 
     #section04 img {
         width: 100%;
+        max-width: 100%;
         height: auto;
         box-sizing: border-box;
     }
 
-    #section04 h1 {
-        width: 90%;
-        height: 150px;
-    }
 
     /* SECTION 05 */
 
     #section05 img {
         width: 100%;
+        max-width: 100%;
         height: auto;
         box-sizing: border-box;
     }
 
-    /* CONTATO */
+
+    /* SECTION 07 */
 
     #section07 table {
-        border-spacing: 8px;
+        max-width: 100%;
+        border-spacing: 5px;
     }
 
     #section07 .caixa0007 {
@@ -546,21 +607,5 @@ footer {
         width: 130px;
         margin: 8px;
     }
-
-    /* TODAS AS SECTIONS */
-
-    #section01,
-    #section02,
-    #section03,
-    #section04,
-    #section05,
-    #section06,
-    #section07 {
-        margin-left: 5px;
-        margin-right: 5px;
-        padding: 10px;
-        box-sizing: border-box;
-    }
 }
-
 /* botao#19222e */
