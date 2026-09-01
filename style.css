@@ -428,21 +428,42 @@ footer {
 
 @media (max-width: 768px) {
 
+    /* GERAL */
+
     html,
     body {
         width: 100%;
         max-width: 100%;
-        overflow-x: hidden;
         margin: 0;
+        padding: 0;
+        overflow-x: hidden;
     }
+
+    /* SEÇÕES */
+
+    #section01,
+    #section02,
+    #section03,
+    #section04,
+    #section05,
+    #section06,
+    #section07 {
+        width: calc(100% - 10px);
+        max-width: 100%;
+        margin-left: 5px;
+        margin-right: 5px;
+        padding: 10px;
+        box-sizing: border-box;
+    }
+
+
+    /* ==================== CABEÇALHO ==================== */
 
     header {
         width: 100%;
         height: 400px;
         box-sizing: border-box;
     }
-
-    /* TEXTOS DO CABEÇALHO */
 
     #Header_texth1 {
         font-size: 32px;
@@ -454,29 +475,12 @@ footer {
     }
 
 
-    /* TODAS AS SEÇÕES */
-
-    #section01,
-    #section02,
-    #section03,
-    #section04,
-    #section05,
-    #section06,
-    #section07 {
-        width: calc(100% - 10px);
-        max-width: 100%;
-        box-sizing: border-box;
-        margin-left: 5px;
-        margin-right: 5px;
-        padding: 10px;
-    }
-
-
-    /* SECTION 01 */
+    /* ==================== SECTION 01 ==================== */
 
     #section01 {
         display: flex;
         flex-direction: column;
+        gap: 15px;
     }
 
     .caixa {
@@ -504,12 +508,12 @@ footer {
     .destaques .destaque {
         width: 90%;
         max-width: 300px;
-        box-sizing: border-box;
         margin: 8px;
+        box-sizing: border-box;
     }
 
 
-    /* SECTION 02 */
+    /* ==================== SECTION 02 ==================== */
 
     .imagens-ensaios {
         display: grid;
@@ -531,19 +535,22 @@ footer {
     .lista02 {
         display: flex;
         flex-direction: column;
+        align-items: center;
         padding: 0;
         margin: 10px;
     }
 
     .lista02 .itemlista02 {
-        width: 100%;
+        width: 90%;
         max-width: 300px;
-        margin: 8px auto;
+        height: auto;
+        min-height: 60px;
+        margin: 8px;
         box-sizing: border-box;
     }
 
 
-    /* SECTION 03 */
+    /* ==================== SECTION 03 ==================== */
 
     #section03 h1 {
         width: 100%;
@@ -555,17 +562,19 @@ footer {
     .lista03 {
         display: grid;
         grid-template-columns: 1fr;
+        gap: 15px;
         margin: 10px;
     }
 
     .lista03-baixo {
         display: flex;
         flex-direction: column;
+        gap: 15px;
         margin: 10px;
     }
 
 
-    /* SECTION 04 */
+    /* ==================== SECTION 04 ==================== */
 
     #section04 h1 {
         width: 100%;
@@ -582,7 +591,7 @@ footer {
     }
 
 
-    /* SECTION 05 */
+    /* ==================== SECTION 05 ==================== */
 
     #section05 img {
         width: 100%;
@@ -592,34 +601,76 @@ footer {
     }
 
 
-    /* SECTION 07 */
+    /* ==================== SECTION 06 ==================== */
+
+    #section06 .caixa006 {
+        width: 100%;
+        max-width: 100%;
+        box-sizing: border-box;
+    }
+
+
+    /* ==================== SECTION 07 - CONTATO ==================== */
+
+    #section07 .caixa007 {
+        width: 100%;
+        max-width: 100%;
+        box-sizing: border-box;
+    }
+
+    /* TABELA */
 
     #section07 table {
+        display: block;
+        width: 100%;
         max-width: 100%;
+        margin: 0 auto;
         border-spacing: 5px;
+        box-sizing: border-box;
+    }
+
+    #section07 table tbody {
+        display: block;
+        width: 100%;
+    }
+
+    #section07 table tr {
+        display: flex;
+        flex-wrap: wrap;
+        justify-content: center;
+        gap: 5px;
+        width: 100%;
+    }
+
+    #section07 table td {
+        flex: 1 1 120px;
+        max-width: 150px;
+        box-sizing: border-box;
     }
 
     #section07 .caixa0007 {
-        padding: 8px;
+        padding: 8px 5px;
+        font-size: 13px;
+        word-break: break-word;
     }
+
+
+    /* BOTÕES */
 
     #section07 .Botao1 {
         width: 130px;
+        height: 50px;
         margin: 8px;
     }
 
-    /* AJUSTE DO CONTATO NO CELULAR */
 
-#section07 table {
-    width: 100%;
-    border-spacing: 5px;
-    table-layout: fixed;
-}
+    /* ==================== RODAPÉ ==================== */
 
-#section07 .caixa0007 {
-    padding: 8px 4px;
-    font-size: 13px;
-    word-break: break-word;
-}
+    footer {
+        margin-top: 30px;
+        padding: 20px 10px;
+        font-size: 12px;
+    }
+
 }
 /* botao#19222e */
