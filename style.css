@@ -607,5 +607,19 @@ footer {
         width: 130px;
         margin: 8px;
     }
+
+    /* AJUSTE DO CONTATO NO CELULAR */
+
+#section07 table {
+    width: 100%;
+    border-spacing: 5px;
+    table-layout: fixed;
+}
+
+#section07 .caixa0007 {
+    padding: 8px 4px;
+    font-size: 13px;
+    word-break: break-word;
+}
 }
 /* botao#19222e */
