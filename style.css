@@ -423,4 +423,144 @@ footer {
     border-top: 1px solid #354052;
 }
 
+
+/* CELULAR */
+
+@media (max-width: 768px) {
+
+    body {
+        margin: 0;
+        width: 100%;
+    }
+
+    header {
+        height: 400px;
+        margin: 0;
+    }
+
+    #Header_texth1 {
+        font-size: 32px;
+    }
+
+    #Header_texth2,
+    #Header_texth3 {
+        font-size: 24px;
+    }
+
+    /* SOBRE A EMPRESA */
+
+    #section01 {
+        flex-direction: column;
+        gap: 15px;
+    }
+
+    .caixa {
+        width: 100%;
+        box-sizing: border-box;
+    }
+
+    .caixa img {
+        width: 100%;
+        height: auto;
+        box-sizing: border-box;
+    }
+
+    .destaques {
+        flex-direction: column;
+        align-items: center;
+    }
+
+    .destaques .destaque {
+        width: 80%;
+        margin: 8px;
+    }
+
+    /* ENSAIOS */
+
+    .imagens-ensaios {
+        grid-template-columns: 1fr;
+    }
+
+    .imagens-ensaios img {
+        width: 100%;
+    }
+
+    .lista02 {
+        flex-direction: column;
+        padding: 0;
+    }
+
+    .lista02 .itemlista02 {
+        width: 90%;
+        margin: 8px;
+    }
+
+    /* POR QUE ESCOLHER */
+
+    #section03 h1 {
+        width: 90%;
+        height: 120px;
+        box-sizing: border-box;
+    }
+
+    .lista03 {
+        grid-template-columns: 1fr;
+    }
+
+    .lista03-baixo {
+        flex-direction: column;
+    }
+
+    /* NOSSO PROCESSO */
+
+    #section04 img {
+        width: 100%;
+        height: auto;
+        box-sizing: border-box;
+    }
+
+    #section04 h1 {
+        width: 90%;
+        height: 150px;
+    }
+
+    /* SECTION 05 */
+
+    #section05 img {
+        width: 100%;
+        height: auto;
+        box-sizing: border-box;
+    }
+
+    /* CONTATO */
+
+    #section07 table {
+        border-spacing: 8px;
+    }
+
+    #section07 .caixa0007 {
+        padding: 8px;
+    }
+
+    #section07 .Botao1 {
+        width: 130px;
+        margin: 8px;
+    }
+
+    /* TODAS AS SECTIONS */
+
+    #section01,
+    #section02,
+    #section03,
+    #section04,
+    #section05,
+    #section06,
+    #section07 {
+        margin-left: 5px;
+        margin-right: 5px;
+        padding: 10px;
+        box-sizing: border-box;
+    }
+}
+
 /* botao#19222e */
